@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Encode / Decode</title>
+    <script src="/src/script.js" defer></script>
+    <script src="/src/js/breadcrumbs.js" defer></script>
+    <script src="base64.js" defer></script>
+    <link rel="stylesheet" href="/src/styles.css">
+    <!--<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/favicon.png" type="image/png">-->
+</head>
+<body>
+    <div class="main-container">
+        <h1>Base64 Encode / Decode</h1>
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumbs"></ol>
+        </nav>
+
+        <div class="seperator"></div>
+
+        <textarea id="input" class="onlydown full-width" placeholder="Input"></textarea>
+        <button id="decode" class="half-width green">Decode</button>
+        <button id="encode" class="half-width red">Encode</button>
+        <textarea id="output" class="onlydown full-width" placeholder="Output"></textarea>
+        
+        <br><br>
+        Alphabet:
+        <select id="language" class="half-width">
+            <option value="standard">Standard (RFC 4648)</option>
+            <option value="urlsafe">URL Safe (RFC 4648)</option>
+            <option value="bcrypt">bcrypt Base64</option>
+            <option value="custom">Custom (* and -)</option>
+        </select>
+
+        <br><br>
+        <label><input type="checkbox" id="remove-nonalpha" checked> Remove Non-Alphabet Chars</label>
+        <br>
+        <label><input type="checkbox" id="strict-mode"> Strict Mode</label>
+
+    </div>
+
+    <footer>
+        <p>© 2025 thesigma67. Licensed under the <a href="https://github.com/thesigma67/thesigma67.github.io/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+        <p>Made by <a href="https://github.com/thesigma67">thesigma67</a> | <a href="https://github.com/thesigma67/thesigma67.github.io">Source Code</a></p>
+    </footer>
+</body>
+</html>

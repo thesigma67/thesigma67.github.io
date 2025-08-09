@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator</title>
+    <script src="/src/script.js" defer></script>
+    <script src="/src/js/breadcrumbs.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/kjua@0.1.1/dist/kjua.min.js"></script>
+    <script src="qrgen.js" defer></script>
+    <link rel="stylesheet" href="/src/styles.css">
+    <!--<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/favicon.png" type="image/png">-->
+</head>
+<body>
+    <div class="main-container">
+        <h1>Home</h1>
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumbs"></ol>
+        </nav>
+
+        <div class="seperator"></div>
+
+        <div id="qrcode"></div>
+
+        <div class="seperator"></div>
+
+        <input id="qr-input" type="text" class="full-width" placeholder="Enter text or URL" />
+        <div class="seperator"></div>
+        <button id="generate-btn" class="green">Generate QR Code</button>
+        <button id="download-btn" class="orange" disabled>Download</button>
+        <br><br>
+        <input type="color" id="color-picker" value="#000000" /> Color
+        <br><br>
+        <input type="color" id="background-picker" value="#ffffff" /> Background Color
+        <br><br>
+        <input type="number" id="size-input" value="250" min="50" max="1000" /> Size (px)
+        <br><br>
+        <input type="number" id="rounded-input" value="10" min="0" max="100" /> Rounded
+        
+    </div>
+
+    <footer>
+        <p>© 2025 thesigma67. Licensed under the <a href="https://github.com/thesigma67/thesigma67.github.io/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+        <p>Made by <a href="https://github.com/thesigma67">thesigma67</a> | <a href="https://github.com/thesigma67/thesigma67.github.io">Source Code</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <script src="/src/script.js" defer></script>
+    <script src="/src/js/breadcrumbs.js" defer></script>
+    <script src="passgen.js" defer></script>
+    <link rel="stylesheet" href="/src/styles.css">
+    <!--<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/favicon.png" type="image/png">-->
+</head>
+<body>
+    <div class="main-container">
+        <h1>Password Generator</h1>
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumbs"></ol>
+        </nav>
+
+        <div class="seperator"></div>
+
+        <input type="text" id="password" placeholder="Generated Password", class="passgen-output" readonly>
+        <img id="toggleVisibility" src="/src/assets/eye.png" alt="Toggle Password" 
+            class="password-eye" />
+
+        <div class="seperator"></div>
+
+        <button id="generate", class="blue">Generate Password</button>
+        <button id="copy", class="green">Copy to Clipboard</button>
+        <button id="clear">Clear</button>
+
+        <div class="settings">
+            <label>
+                Password length:
+                <input type="number" id="length" min="4" max="64" value="12">
+            </label>
+            <label>
+                <input type="checkbox" id="includeUppercase" checked>
+                Include Uppercase Letters
+            </label>
+            <label>
+                <input type="checkbox" id="includeNumbers" checked>
+                Include Numbers
+            </label>
+            <label>
+                <input type="checkbox" id="includeSymbols" checked>
+                Include Symbols
+            </label>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <p>© 2025 thesigma67. Licensed under the <a href="https://github.com/thesigma67/thesigma67.github.io/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+        <p>Made by <a href="https://github.com/thesigma67">thesigma67</a> | <a href="https://github.com/thesigma67/thesigma67.github.io">Source Code</a></p>
+    </footer>
+</body>
+</html>

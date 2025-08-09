@@ -1,0 +1,21 @@
+ video {
+    width: 50%;
+    background: #000;
+    border-radius: 8px;
+  }
+  #mic-meter {
+    height: 20px;
+    background: #444;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0.3rem;
+  }
+  #mic-level {
+    height: 100%;
+    width: 0%;
+    background: #4caf50;
+    transition: width 0.1s ease-out;
+  }
+  .error {
+    color: #f55;
+  }

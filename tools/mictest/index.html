@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microphone / Webcam Tester</title>
+    <script src="/src/script.js" defer></script>
+    <script src="/src/js/breadcrumbs.js" defer></script>
+    <script src="mictest.js" defer></script>
+    <link rel="stylesheet" href="mictest.css">
+    <link rel="stylesheet" href="/src/styles.css">
+    <!--<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/favicon.png" type="image/png">-->
+</head>
+<body>
+    <div class="main-container">
+        <h1>Microphone / Webcam Tester</h1>
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumbs"></ol>
+        </nav>
+
+        <div class="seperator"></div>
+
+        <label for="videoSelect">Select Webcam:</label>
+        <select id="videoSelect"></select>
+
+        <label for="audioSelect">Select Microphone:</label>
+        <select id="audioSelect"></select>
+
+        <button id="startBtn" class="green">Start Testing</button>
+        <button id="stopBtn" class="red" disabled>Stop Testing</button>
+
+        <video id="video" autoplay muted playsinline></video>
+
+        <div>
+            <label>Microphone Level:</label>
+            <div id="mic-meter"><div id="mic-level"></div></div>
+        </div>
+
+
+        <select id="mic-select"></select>
+        <button id="start-record-btn" class="green" disabled>Start Recording</button>
+        <button id="stop-record-btn" class="red" disabled>Stop Recording</button>
+        <button id="download-record-btn" class="orange" disabled>Download Recording</button>
+
+        <div id="audio-meter" style="width: 100%; height: 20px; background: #555; border-radius: 5px; margin-top: 10px; overflow: hidden;">
+            <div id="audio-meter-fill" style="height: 100%; width: 0%; background: #2ecc71;"></div>
+        </div>
+
+        <audio id="playback" controls style="margin-top: 10px; width: 100%; display: none;"></audio>
+
+
+
+        <p>If your webcam or microphone is not showing, please refresh and make sure you allowed the permissions</p>
+<p id="errorMsg" class="error"></p>
+        
+    </div>
+
+    <footer>
+        <p>© 2025 thesigma67. Licensed under the <a href="https://github.com/thesigma67/thesigma67.github.io/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+        <p>Made by <a href="https://github.com/thesigma67">thesigma67</a> | <a href="https://github.com/thesigma67/thesigma67.github.io">Source Code</a></p>
+    </footer>
+</body>
+</html>

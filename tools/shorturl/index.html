@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <script src="/src/script.js" defer></script>
+    <script src="/src/js/breadcrumbs.js" defer></script>
+    <script src="shorturl.js" defer></script>
+    <link rel="stylesheet" href="/src/styles.css">
+    <!--<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/favicon.png" type="image/png">-->
+</head>
+<body>
+    <div class="main-container">
+        <h1>URL Shortener</h1>
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumbs"></ol>
+        </nav>
+
+        <div class="seperator"></div>
+
+        <input id="url-input" type="url" placeholder="Long URL" class="full-width" />
+        <button id="shorten-btn" class="green full-width">Shorten URL</button>
+        <div id="result" style="margin-top: 1em;"></div>
+
+        <h2>Advanced Options</h2>
+        <input id="custom-alias" type="text" placeholder="Custom short URL path (is.gd/...) (optional)" class="full-width" />
+        <br><br>
+        <input id="secret" type="text" placeholder="Secret (optional)" class="full-width" />
+        <br><br>
+        <input id="redirect" type="url" placeholder="Custom redirect URL (optional)" class="full-width" />
+        
+    </div>
+
+    <footer>
+        <p>© 2025 thesigma67. Licensed under the <a href="https://github.com/thesigma67/thesigma67.github.io/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+        <p>Made by <a href="https://github.com/thesigma67">thesigma67</a> | <a href="https://github.com/thesigma67/thesigma67.github.io">Source Code</a></p>
+    </footer>
+</body>
+</html>

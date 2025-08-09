@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Counter</title>
+    <script src="/src/script.js" defer></script>
+    <script src="/src/js/breadcrumbs.js" defer></script>
+    <script src="charcount.js" defer></script>
+    <link rel="stylesheet" href="/src/styles.css">
+    <!--<link rel="icon" href="/src/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/src/favicon.png" type="image/png">-->
+</head>
+<body>
+    <div class="main-container">
+        <h1>Character Counter</h1>
+        <nav aria-label="breadcrumb">
+            <ol id="breadcrumbs"></ol>
+        </nav>
+
+        <div class="seperator"></div>
+
+        <h2>0 characters, 0 letters, 0 words, 0 sentences, 0 paragraphs</h2>
+        <textarea id="textInput" placeholder="Type or paste your text here..." class="onlydown full-width"></textarea>
+        <br><br>
+        Paragraph Type:
+        <select id="paragraphType">
+            <option value="newline">Every new line</option>
+            <option value="othernewline">Every other new line</option>
+        </select>
+        <br><br>
+        <input type="checkbox" id="limitMode"> Limit Mode
+        <br><br>
+        <label for="limitInput">Limit:</label> <input type="number" id="limitInput" value="1000" min="1"> characters
+        
+    </div>
+
+    <footer>
+        <p>© 2025 thesigma67. Licensed under the <a href="https://github.com/thesigma67/thesigma67.github.io/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>.</p>
+        <p>Made by <a href="https://github.com/thesigma67">thesigma67</a> | <a href="https://github.com/thesigma67/thesigma67.github.io">Source Code</a></p>
+    </footer>
+</body>
+</html>
